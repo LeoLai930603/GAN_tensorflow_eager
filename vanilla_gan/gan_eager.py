@@ -68,7 +68,7 @@ def plot(samples: np.ndarray):
 # Computation of generator loss
 def generator_loss(logits: tf.Tensor):
     '''
-    :param logits: tf.Tensor. The output of generator, shape => (batch_size, INPUT_SIZE)
+    :param logits: tf.Tensor. The output of discriminator, shape => (batch_size, 1)
     :return: tf.Tensor. Average loss of generator
     '''
     return tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits=logits, labels=tf.ones_like(logits)))
@@ -127,7 +127,7 @@ def main():
     # prepare the data set, here we use mnist for a short demo
     mnist = input_data.read_data_sets(os.path.join(config.ROOT_DIR, "MNIST_data"), one_hot=True)
 
-    # setup the optimizers for two MLP netowrks
+    # setup the optimizers for two MLP networks
     D_solver = tf.train.AdamOptimizer()
     G_solver = tf.train.AdamOptimizer()
 
