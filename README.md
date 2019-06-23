@@ -23,3 +23,5 @@ Only entry of each demo is the `main()` function, so the demo procedure is:
 ### v0.1.0(2019/06/13 11:30 UTC+08:00)
 * Basic project setup (only vanilla GAN is available at this time)
 * README.md added
+### v0.1.1(2019/06/23 15:15 UTC+08:00)
+* Conditional GAN project added
