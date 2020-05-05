@@ -8,7 +8,7 @@ Most demo examples are from: [wiseodd/generative-models](https://github.com/wise
 
 ## Dependency
 
-```TensorFlow==1.13.0```  
+```TensorFlow==2.1.0 (Notice: Vanilla GAN and Conditional GAN works with Tensorflow==1.13.0, the related code will be updated to 2.1.0 in future)```  
 ```matplotlib>=3.0.2```
 
 ## Usage
@@ -25,3 +25,5 @@ Only entry of each demo is the `main()` function, so the demo procedure is:
 * README.md added
 ### v0.1.1(2019/06/23 15:15 UTC+08:00)
 * Conditional GAN project added
+### v0.1.2(2020/05/05 16:48 UTC+08:00)
+* InfoGAN project added
